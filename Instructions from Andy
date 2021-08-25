@@ -1,0 +1,41 @@
+Pedro / Dimitar
+
+Thanks for your time yesterday.
+
+As discussed, see below a simple step-by-step guide to the process I adopted to produce the benchmark data.
+
+1.	Finance to identify which folios across LOR, Expanded and CHT were/are used to deliver the scheme being benchmarked. They also supplied me with the EFC which was in CIM so I could cross check and verify the same in COINS. This was to ensure / capture any residual cost to complete provisions within the exercise.
+
+2.	Basic information for each scheme regarding date of completion and GIFA m2 are required
+
+3.	Run a COINS Cost head report for the client facing folio (LOR) (CONTRACT > Single Contract Enquiry > Cost Head) and export the report to excel
+
+4.	Paste the Cost head codes (AA01 to ZZ99) and use the VLOOKUP to allocate the costs to the required “buckets” within the excel spreadsheet. Based upon the exercise I have done I have also come up with a slightly amended VLOOKUP which may make the process easier and thus reduces the items which need to be re-allocated, for example excavators can be allocated straight to “External Works” rather than prelims.
+
+5.	Run a Subcontractor short summary report (Subcontract Ledger > Reports > Subcontractor Reports > Summary (Short)) on the client facing folio and export this into a excel spreadsheet. Then run a further subcontract report (Subcontract Ledger > Subcontracts) on the same folio. Take the information in column G “Description of the Works” and insert this into the Subcontractor short summary report. This now tells us which subcontractor did what element of work and the sum associated.
+
+6.	Add 10 columns to the right of the information within the Short Summary report with the following prime cost headings;
+a.	Substructure
+b.	Super structure
+c.	Internal Finishes
+d.	FF&E
+e.	MEP Services
+f.	Specialist Installations
+g.	External Works / Services
+h.	Other Works
+i.	Prelim Subs
+j.	Consultant / Surveys
+
+7.	Allocate the subcontractor cost within the Short Summary to the various headings based upon the descriptions provided. I have appended a copy which also includes generic descriptions for the type of items I am including in each category (see line 136). Some elements of cost may need to be split, such as Expanded across various headings ie Substructure, Superstructure and External Works
+
+8.	A check is required on any payments made to CHT or Expanded as these need to be adjusted to be based upon their actual cost on their respective folio + 10% only (as an embedded baseline margin position). As the majority of the Projects I benchmarked were SGM schemes the payments would be based upon this calculation rather than the actual cost incurred.
+
+9.	Produce the score card / Project Summary from the information produced so far. Knowing what the total cost is for LOR + CHT + EXP we can determine what 10% SGM would be. From this 10% SGM £sum deduct the embedded margin within CHT and EXP. The remaining sum is then the OH&P which need to be shown on the Score Card / Project Summary. I have included DGRI as an example.
+
+10.	We then need to analyse the value attributable to other Specialist Trading Business Groups outside of CHT and Expanded. The only way I could determine this was by reviewing transactional COINS reports for LOR, CHT and EXP and then reviewing the transactions / account codes / cost head descriptions for which items pertaining to. I suggest there must be a way to link the explore, select et al folios so pull in the relevant value and its subsequently cost.
+
+11.	All costs are then index linked to PUBSEC based upon the date of Completion and brought up to current day pricing. The costs are then combined to produce a weighted and simple average model which we can then use to analyse a scheme.
+
+12.	From the data collected we can generate MAX and MIN for each element to give us an understand of the variance per m2 which could be expected.
+
+13.	The prelims data can be analysed using the “bucket” allocation to determine performance against the average and to optimise our prelim delivery model moving forward.
